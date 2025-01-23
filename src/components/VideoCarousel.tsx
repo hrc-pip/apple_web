@@ -54,11 +54,11 @@ const VideoCarousel = () => {
 
   useEffect(() => {
     let currentProgress = 0;
-    let span = videoSpanRef.current;
+    const span = videoSpanRef.current;
 
     if (span[videoId]) {
       // animation to move the indicator
-      let anim = gsap.to(span[videoId], {
+      const anim = gsap.to(span[videoId], {
         onUpdate: () => {
           // get the progress of the video
           const progress = Math.ceil(anim.progress() * 100);
