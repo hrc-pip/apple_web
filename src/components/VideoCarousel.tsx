@@ -9,7 +9,7 @@ import { hightlightsSlides } from "../constants";
 import { pauseImg, playImg, replayImg } from "../utils";
 
 const VideoCarousel = () => {
-  const videoRef = useRef([]);
+  const videoRef = useRef<HTMLVideoElement[]>([]);
   const videoSpanRef = useRef([]);
   const videoDivRef = useRef([]);
 
